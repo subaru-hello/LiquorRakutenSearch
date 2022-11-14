@@ -1,9 +1,11 @@
 # LiquorRakutenSearch
-楽天市場APIからお酒の情報を取得する
+fetch liquor data from Rakuten API for developers
 
+### How
 1. aquire an application id from Rakuten Developers
 2. set application id on .env such as RAKUTEN_APP_ID='YOUR ID'
 
+### Output
 ```
 $ ruby rakuten.rb
 11/15は全品P2倍 【あす楽】【全国一律送料無料】サントリー こだわり酒場のレモンサワー 350ml×2ケース/48本 YLG, 5569 yen
