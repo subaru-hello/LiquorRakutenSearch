@@ -5,8 +5,8 @@ RakutenWebService.configure do |c|
   c.application_id = ENV['RAKUTEN_APP_ID']
 end
  
-items = RakutenWebService::Ichiba::Item.search(:keyword => 'レモンサワー') # This returns Enamerable object
+items = RakutenWebService::Ichiba::Item.search(:keyword => 'レモンサワー')
 items.first(10).each do |item|
-  puts "#{item['itemName']}, #{item.price} yen" # You can refer to values as well as Hash.
-  puts "#{item['itemUrl']} #{item['smallImageUrls'][0]} #{item['itemPrice']} "
+  puts "#{item['itemName']}, #{item['itemPrice']}  yen"
+  puts "#{item['itemUrl']} #{item['smallImageUrls'][0]} "
 end
